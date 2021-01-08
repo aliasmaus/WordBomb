@@ -4,9 +4,7 @@
       "src": [
         {
           "files": [
-            "*.csproj",
-            "Game.cs",
-            "UI.cs"
+            "*.csproj"
           ],
           "cwd": ".",
           "exclude": [
