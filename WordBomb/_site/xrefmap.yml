@@ -1,0 +1,185 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: WordBomb
+  name: WordBomb
+  href: api/WordBomb.html
+  commentId: N:WordBomb
+  fullName: WordBomb
+  nameWithType: WordBomb
+- uid: WordBomb.Debug
+  name: Debug
+  href: api/WordBomb.Debug.html
+  commentId: T:WordBomb.Debug
+  fullName: WordBomb.Debug
+  nameWithType: Debug
+- uid: WordBomb.Debug.DebugMessage(System.String)
+  name: DebugMessage(String)
+  href: api/WordBomb.Debug.html#WordBomb_Debug_DebugMessage_System_String_
+  commentId: M:WordBomb.Debug.DebugMessage(System.String)
+  fullName: WordBomb.Debug.DebugMessage(System.String)
+  nameWithType: Debug.DebugMessage(String)
+- uid: WordBomb.Debug.DebugMessage(System.String,System.Int32)
+  name: DebugMessage(String, Int32)
+  href: api/WordBomb.Debug.html#WordBomb_Debug_DebugMessage_System_String_System_Int32_
+  commentId: M:WordBomb.Debug.DebugMessage(System.String,System.Int32)
+  fullName: WordBomb.Debug.DebugMessage(System.String, System.Int32)
+  nameWithType: Debug.DebugMessage(String, Int32)
+- uid: WordBomb.Debug.DebugMessage*
+  name: DebugMessage
+  href: api/WordBomb.Debug.html#WordBomb_Debug_DebugMessage_
+  commentId: Overload:WordBomb.Debug.DebugMessage
+  isSpec: "True"
+  fullName: WordBomb.Debug.DebugMessage
+  nameWithType: Debug.DebugMessage
+- uid: WordBomb.InputHandler
+  name: InputHandler
+  href: api/WordBomb.InputHandler.html
+  commentId: T:WordBomb.InputHandler
+  fullName: WordBomb.InputHandler
+  nameWithType: InputHandler
+- uid: WordBomb.InputHandler.GetValidIntInput(System.String)
+  name: GetValidIntInput(String)
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidIntInput_System_String_
+  commentId: M:WordBomb.InputHandler.GetValidIntInput(System.String)
+  fullName: WordBomb.InputHandler.GetValidIntInput(System.String)
+  nameWithType: InputHandler.GetValidIntInput(String)
+- uid: WordBomb.InputHandler.GetValidIntInput(System.String,System.Int32,System.Int32)
+  name: GetValidIntInput(String, Int32, Int32)
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidIntInput_System_String_System_Int32_System_Int32_
+  commentId: M:WordBomb.InputHandler.GetValidIntInput(System.String,System.Int32,System.Int32)
+  fullName: WordBomb.InputHandler.GetValidIntInput(System.String, System.Int32, System.Int32)
+  nameWithType: InputHandler.GetValidIntInput(String, Int32, Int32)
+- uid: WordBomb.InputHandler.GetValidIntInput*
+  name: GetValidIntInput
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidIntInput_
+  commentId: Overload:WordBomb.InputHandler.GetValidIntInput
+  isSpec: "True"
+  fullName: WordBomb.InputHandler.GetValidIntInput
+  nameWithType: InputHandler.GetValidIntInput
+- uid: WordBomb.InputHandler.GetValidStringInput(System.String)
+  name: GetValidStringInput(String)
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidStringInput_System_String_
+  commentId: M:WordBomb.InputHandler.GetValidStringInput(System.String)
+  fullName: WordBomb.InputHandler.GetValidStringInput(System.String)
+  nameWithType: InputHandler.GetValidStringInput(String)
+- uid: WordBomb.InputHandler.GetValidStringInput(System.String,System.Char[],System.Boolean)
+  name: GetValidStringInput(String, Char[], Boolean)
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidStringInput_System_String_System_Char___System_Boolean_
+  commentId: M:WordBomb.InputHandler.GetValidStringInput(System.String,System.Char[],System.Boolean)
+  name.vb: GetValidStringInput(String, Char(), Boolean)
+  fullName: WordBomb.InputHandler.GetValidStringInput(System.String, System.Char[], System.Boolean)
+  fullName.vb: WordBomb.InputHandler.GetValidStringInput(System.String, System.Char(), System.Boolean)
+  nameWithType: InputHandler.GetValidStringInput(String, Char[], Boolean)
+  nameWithType.vb: InputHandler.GetValidStringInput(String, Char(), Boolean)
+- uid: WordBomb.InputHandler.GetValidStringInput(System.String,System.String[])
+  name: GetValidStringInput(String, String[])
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidStringInput_System_String_System_String___
+  commentId: M:WordBomb.InputHandler.GetValidStringInput(System.String,System.String[])
+  name.vb: GetValidStringInput(String, String())
+  fullName: WordBomb.InputHandler.GetValidStringInput(System.String, System.String[])
+  fullName.vb: WordBomb.InputHandler.GetValidStringInput(System.String, System.String())
+  nameWithType: InputHandler.GetValidStringInput(String, String[])
+  nameWithType.vb: InputHandler.GetValidStringInput(String, String())
+- uid: WordBomb.InputHandler.GetValidStringInput(System.String,System.String[],System.Boolean)
+  name: GetValidStringInput(String, String[], Boolean)
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidStringInput_System_String_System_String___System_Boolean_
+  commentId: M:WordBomb.InputHandler.GetValidStringInput(System.String,System.String[],System.Boolean)
+  name.vb: GetValidStringInput(String, String(), Boolean)
+  fullName: WordBomb.InputHandler.GetValidStringInput(System.String, System.String[], System.Boolean)
+  fullName.vb: WordBomb.InputHandler.GetValidStringInput(System.String, System.String(), System.Boolean)
+  nameWithType: InputHandler.GetValidStringInput(String, String[], Boolean)
+  nameWithType.vb: InputHandler.GetValidStringInput(String, String(), Boolean)
+- uid: WordBomb.InputHandler.GetValidStringInput*
+  name: GetValidStringInput
+  href: api/WordBomb.InputHandler.html#WordBomb_InputHandler_GetValidStringInput_
+  commentId: Overload:WordBomb.InputHandler.GetValidStringInput
+  isSpec: "True"
+  fullName: WordBomb.InputHandler.GetValidStringInput
+  nameWithType: InputHandler.GetValidStringInput
+- uid: WordBomb.WordFamily
+  name: WordFamily
+  href: api/WordBomb.WordFamily.html
+  commentId: T:WordBomb.WordFamily
+  fullName: WordBomb.WordFamily
+  nameWithType: WordFamily
+- uid: WordBomb.WordFamily.#ctor(System.String[],System.String,System.Boolean)
+  name: WordFamily(String[], String, Boolean)
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily__ctor_System_String___System_String_System_Boolean_
+  commentId: M:WordBomb.WordFamily.#ctor(System.String[],System.String,System.Boolean)
+  name.vb: WordFamily(String(), String, Boolean)
+  fullName: WordBomb.WordFamily.WordFamily(System.String[], System.String, System.Boolean)
+  fullName.vb: WordBomb.WordFamily.WordFamily(System.String(), System.String, System.Boolean)
+  nameWithType: WordFamily.WordFamily(String[], String, Boolean)
+  nameWithType.vb: WordFamily.WordFamily(String(), String, Boolean)
+- uid: WordBomb.WordFamily.#ctor*
+  name: WordFamily
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily__ctor_
+  commentId: Overload:WordBomb.WordFamily.#ctor
+  isSpec: "True"
+  fullName: WordBomb.WordFamily.WordFamily
+  nameWithType: WordFamily.WordFamily
+- uid: WordBomb.WordFamily.CommonLetters
+  name: CommonLetters
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_CommonLetters
+  commentId: P:WordBomb.WordFamily.CommonLetters
+  fullName: WordBomb.WordFamily.CommonLetters
+  nameWithType: WordFamily.CommonLetters
+- uid: WordBomb.WordFamily.CommonLetters*
+  name: CommonLetters
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_CommonLetters_
+  commentId: Overload:WordBomb.WordFamily.CommonLetters
+  isSpec: "True"
+  fullName: WordBomb.WordFamily.CommonLetters
+  nameWithType: WordFamily.CommonLetters
+- uid: WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char,System.String)
+  name: GetNewOptimumWordFamily(Char, String)
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetNewOptimumWordFamily_System_Char_System_String_
+  commentId: M:WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char,System.String)
+  fullName: WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char, System.String)
+  nameWithType: WordFamily.GetNewOptimumWordFamily(Char, String)
+- uid: WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char,System.String,System.Int32)
+  name: GetNewOptimumWordFamily(Char, String, Int32)
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetNewOptimumWordFamily_System_Char_System_String_System_Int32_
+  commentId: M:WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char,System.String,System.Int32)
+  fullName: WordBomb.WordFamily.GetNewOptimumWordFamily(System.Char, System.String, System.Int32)
+  nameWithType: WordFamily.GetNewOptimumWordFamily(Char, String, Int32)
+- uid: WordBomb.WordFamily.GetNewOptimumWordFamily*
+  name: GetNewOptimumWordFamily
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetNewOptimumWordFamily_
+  commentId: Overload:WordBomb.WordFamily.GetNewOptimumWordFamily
+  isSpec: "True"
+  fullName: WordBomb.WordFamily.GetNewOptimumWordFamily
+  nameWithType: WordFamily.GetNewOptimumWordFamily
+- uid: WordBomb.WordFamily.GetRandomWord
+  name: GetRandomWord()
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetRandomWord
+  commentId: M:WordBomb.WordFamily.GetRandomWord
+  fullName: WordBomb.WordFamily.GetRandomWord()
+  nameWithType: WordFamily.GetRandomWord()
+- uid: WordBomb.WordFamily.GetRandomWord*
+  name: GetRandomWord
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetRandomWord_
+  commentId: Overload:WordBomb.WordFamily.GetRandomWord
+  isSpec: "True"
+  fullName: WordBomb.WordFamily.GetRandomWord
+  nameWithType: WordFamily.GetRandomWord
+- uid: WordBomb.WordFamily.GetWordState
+  name: GetWordState()
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetWordState
+  commentId: M:WordBomb.WordFamily.GetWordState
+  fullName: WordBomb.WordFamily.GetWordState()
+  nameWithType: WordFamily.GetWordState()
+- uid: WordBomb.WordFamily.GetWordState*
+  name: GetWordState
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_GetWordState_
+  commentId: Overload:WordBomb.WordFamily.GetWordState
+  isSpec: "True"
+  fullName: WordBomb.WordFamily.GetWordState
+  nameWithType: WordFamily.GetWordState
+- uid: WordBomb.WordFamily.words
+  name: words
+  href: api/WordBomb.WordFamily.html#WordBomb_WordFamily_words
+  commentId: F:WordBomb.WordFamily.words
+  fullName: WordBomb.WordFamily.words
+  nameWithType: WordFamily.words
