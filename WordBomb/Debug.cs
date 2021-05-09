@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace WordBomb
 {
+    /// <summary>
+    /// Custom debug stuff for dev purposes
+    /// </summary>
     public static class Debug
     {
         private static readonly string debugLogFile = "runtimelog.txt";
-        private static readonly int debugLevel = 4;
+        private static readonly int debugLevel = 1;
 
         /// <summary>
         /// Writes a debug message to the log file (no level validation)

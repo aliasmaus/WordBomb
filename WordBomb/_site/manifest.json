@@ -48,7 +48,7 @@
           "hash": "3BuyWI8J1COVCPa1tamcGQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/WordBomb.Debug.html",
-          "hash": "wiDdOtywrXRZNzzwjWqPnw=="
+          "hash": "rrABnAzguWBUJVTBBV4zVQ=="
         }
       },
       "is_incremental": true,
@@ -72,7 +72,7 @@
           "hash": "5Eztc4YvL3MeuZG2JFO4vQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/WordBomb.html",
-          "hash": "+HSfce32itAqd1vx4sVEkw=="
+          "hash": "JzjLRFosFgPrwugeb6Er1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -143,7 +143,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
+          "skipped_file_count": 3
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace WordBomb
 {
+    /// <summary>
+    /// For drawing the various screens to the console
+    /// </summary>
     static class UI
     {
         // Screen strings
@@ -23,7 +26,7 @@ namespace WordBomb
             "Ascii text art: patorjk.com/software/taag/",
             "Bomb icon: OpenClipart-Vectors via pixabay.com\t https://pixabay.com/service/license/"
         };
-        // Console attributes
+        // Center point of console for centered stuff
         private static readonly int center = Console.WindowWidth / 2;
 
         // SCREEN METHODS
@@ -55,11 +58,11 @@ namespace WordBomb
             }
             if (Convert.ToInt32(game.GetRound)==0)
             {
-                return InputHandler.GetValidStringInput("Guess a letter!", validWords: CharData.LetterCharArray(), upper: false);
+                return InputHandler.GetValidStringInput("Guess a letter!", validWords: CharData.LetterCharArray(), upper: true);
             }
             else
             {
-                return InputHandler.GetValidStringInput("Guess another letter!", validWords: CharData.LetterCharArray(), upper: false);
+                return InputHandler.GetValidStringInput("Guess another letter!", validWords: CharData.LetterCharArray(), upper: true);
             }          
         }
         /// <summary>
@@ -162,6 +165,9 @@ namespace WordBomb
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Draws the formatted WordBomb Title ascii text on a clean console
+        /// </summary>
         public static void DrawTitle()
         {
             Console.Clear();
@@ -174,6 +180,10 @@ namespace WordBomb
             
         }
 
+        /// <summary>
+        /// Draws centered text to the console (handles multi-line)
+        /// </summary>
+        /// <param name="text">text to be drawn</param>
         private static void DrawCenteredText(string text)
         {
             string[] lines = text.Split('\n');

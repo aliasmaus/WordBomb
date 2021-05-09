@@ -8,7 +8,13 @@ namespace WordBomb
 {
     static class CharData
     {
+        /// <summary>
+        /// letters in the alphabet as string for index reference
+        /// </summary>
         private static readonly string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        /// <summary>
+        /// letter frequency lookup array
+        /// </summary>
         private static readonly double[] normalisedLetterFrequencies = new double[]
         {
                 0.0812, //A
@@ -38,10 +44,34 @@ namespace WordBomb
                 0.0211, //Y
                 0.0007  //Z
         };
+        /// <summary>
+        /// get letter char by index
+        /// </summary>
+        /// <param name="letterIndex">index to retrieve</param>
+        /// <returns>letter at index</returns>
         public static char Letter(int letterIndex) => letters[letterIndex];
+        /// <summary>
+        /// get alphabet index by letter char
+        /// </summary>
+        /// <param name="letter">letter to find index of</param>
+        /// <returns>index of letter in alphabet</returns>
         public static int LetterIndex(char letter) => letters.IndexOf(letter);
+        /// <summary>
+        /// get letter frequency by index
+        /// </summary>
+        /// <param name="letterIndex">index of letter</param>
+        /// <returns>frequency of letter</returns>
         public static double Frequency(int letterIndex) => normalisedLetterFrequencies[letterIndex];
+        /// <summary>
+        /// get frequency by letter char
+        /// </summary>
+        /// <param name="letter">letter to lookup</param>
+        /// <returns>frequency of letter</returns>
         public static double Frequency(char letter) => normalisedLetterFrequencies[letters.IndexOf(letter)];
+        /// <summary>
+        /// get char array of upper and lower letters for input validation
+        /// </summary>
+        /// <returns>char array of upper and lower letters: alphabetical upper then lower</returns>
         public static char[] LetterCharArray() => (letters + letters.ToLower()).ToCharArray();
         
     }

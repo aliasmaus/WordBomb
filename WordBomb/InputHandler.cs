@@ -99,7 +99,12 @@ namespace WordBomb
         {
             Console.WriteLine(message);
             bool valid = false;
-
+            string validString = "";
+            foreach(string word in validWords)
+            {
+                validString += word;
+                validString += ", ";
+            }
             string input = "";
             do
             {
@@ -110,7 +115,7 @@ namespace WordBomb
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input! valid inputs - " + validWords.ToString());
+                    Console.WriteLine("Invalid input! valid inputs - {0}", validString);
                 }
             } while (!valid);
 
@@ -157,7 +162,7 @@ namespace WordBomb
             {
                 validWordsStrings.Add(Convert.ToString(letter));
             }
-            return GetValidStringInput(message, validWordsStrings.ToArray(), true);
+            return GetValidStringInput(message, validWordsStrings.ToArray(), upper);
         }
     }
 }

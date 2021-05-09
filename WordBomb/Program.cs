@@ -42,6 +42,7 @@ namespace WordBomb
                                 mode = configuration[3]
                             };
 
+                            // While game not complete, progress game
                             do
                             {
                                 string guess = UI.DrawGameScreen(game, debugMode);
@@ -50,11 +51,12 @@ namespace WordBomb
                             }
                             while (game.EvaluateGameState() == 1);
 
+                            // When game complete and lose state achieved show lose screen (prompts to play again)
                             if (game.EvaluateGameState() == 0)
                             {
                                 continueGame = UI.DrawGameOverScreen(game);
                             }
-
+                            // Else game must be won so display win screen (prompts to play again)
                             else
                             {
                                 continueGame = UI.DrawWinScreen(game);
@@ -92,6 +94,7 @@ namespace WordBomb
                     case 2:
                         UI.DrawCreditsScreen();
                         break;
+                    // Turn Debug mode on/off
                     case 3:
                         UI.DrawTitle();
                         string debugON = InputHandler.GetValidStringInput("Turn debug mode on? (yes/no) ", new string[]{ "YES", "yes", "NO" , "no"});
@@ -104,9 +107,11 @@ namespace WordBomb
                             debugMode = false;
                         }
                         break;
+                    // Quit Application
                     case 4:
                         quit = true;
                         break;
+                    // Should never be reached because of input validation
                     default:
                         throw new NotImplementedException();
                 }

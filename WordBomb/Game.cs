@@ -27,10 +27,11 @@ namespace WordBomb
 
         // CONSTRUCTORS
         /// <summary>
-        /// Starts a Human vs AI game with the parameters input (no console prompt)
+        /// Starts a game with the parameters input
         /// </summary>
         /// <param name="guesses">Number of wrong guesses permitted</param>
         /// <param name="level">Word length setting (see LoadLevel() for key)</param>
+        /// <param name="custom">Custom word length</param>
         public Game(int guesses, int level, int custom)
         {
             // set game parameters and load
@@ -41,6 +42,8 @@ namespace WordBomb
         }
         /// <summary>
         /// Starts a new AI game if AI set to true, otherwise does nothing
+        /// AI games output game data to csv for analysis and debugging info to the debug log
+        /// *Not used in final application, was used to debug in development
         /// </summary>
         /// <param name="guesses">Number of guesses allowed</param>
         /// <param name="level">Level to play game</param>
@@ -54,35 +57,7 @@ namespace WordBomb
                 LoadLevel(Convert.ToInt32(level), custom);
             }
         }
-        /// <summary>
-        /// Starts a Human vs AI game and prompts user in the console for game parameters
-        /// </summary>
-        //public Game()
-        //{
-        //    // Get level
-        //    try
-        //    {
-        //        Console.WriteLine("Select a level:\n1. Short words - 2-5 letters\n2. Medium words - 6-8 letters\n3. Long words - 9+ letters\n4. Custom word length - 2-27 letters");
-        //        LoadLevel(Convert.ToInt32(Console.ReadLine()));
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Invalid input! Requires an integer between 1 and 4\nPress any key to continue...");
-        //        Console.ReadKey();
-        //    }
-        //    // Get number of guesses
-        //    try
-        //    {
-        //        Console.WriteLine("How many wrong guesses do you want? (max 16)");
-        //        guessesLeft = Convert.ToInt32(Console.ReadLine());
-        //    }
-        //    catch
-        //    {
-        //        Console.WriteLine("Invalid input! Requires an integer between 1 and 16\nPress any key to continue...");
-        //        Console.ReadKey();
-        //    }
 
-        //}
 
 
         // GETTERS
@@ -116,9 +91,10 @@ namespace WordBomb
         /// 1. 2-5 letters
         /// 2. 6-8 letters
         /// 3. 9+ letters
-        /// 4. prompt for custom length (max 27)
+        /// 4. custom length (max 27)
         /// </summary>
         /// <param name="level">Integer between 1 and 4 corresponding to the selected level</param>
+        /// <param name="custom">Custom word length (will only load if level == 4)</param>
         private void LoadLevel(int level, int custom)
         {
             Random rand = new Random();
@@ -157,15 +133,16 @@ namespace WordBomb
             Debug.DebugMessage("Evaluating guess", 2);
             round += 1;
             lastGuess = guess;
-            guessedLetters += guess + " ";
+            
             TryToCheat(guess);
-            if(!currentWordFamily.CommonLetters.Contains(guess))
+            if(!guessedLetters.Contains(guess))
             {
+                guessedLetters += guess + " ";
                 guessesLeft -= 1;
             }
         }
         /// <summary>
-        /// Try to cheat by using the largest word family available that matches the current word state
+        /// Try to cheat by using the set game mode
         /// </summary>
         /// <param name="guess">The user supplied guess that is being evaluated</param>
         private void TryToCheat(char guess)

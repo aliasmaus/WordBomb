@@ -9,7 +9,9 @@ namespace WordBomb
     /// </summary>
     public class WordFamily
     {
+        // List of words in family
         public string[] words;
+        // Formatted string containing the families common letters and "_" for wildcards
         private readonly string commonLetters;
 
         // GETTERS
@@ -17,7 +19,7 @@ namespace WordBomb
         /// <summary>
         /// Constructs the formatted word guess string for display
         /// </summary>
-        /// <returns>Formatted guess string (eg "G U E S S")</returns>
+        /// <returns>Formatted guess string (eg "G U _ S S")</returns>
         public string GetWordState()
         {
             string state = "";
@@ -154,10 +156,10 @@ namespace WordBomb
             return best.ToArray();
         }
         /// <summary>
-        /// Computes sub families based upon guess input and returns the largest available
+        /// Computes sub families based upon guess input
         /// </summary>
         /// <param name="guess">User supplied guess letter</param>
-        /// <returns>Largest matching word family</returns>
+        /// <returns>Computed word sub families</returns>
         private List<string>[] ComputeSubFamilies(char guess)
         {
             Debug.DebugMessage("Computing families for guess " + guess);
@@ -232,7 +234,6 @@ namespace WordBomb
                     largest = list;
                 }
             }
-            Debug.DebugMessage("Returned at tier 2, new word list length is " + largest.Count, 2);
             return largest;
         }
         /// <summary>
